@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>うどんorそば</title>
+  <link rel="stylesheet" href="../static/stylesheet.css">
+</head>
+
+<body>
+
+<header>
+<a href="u-s" class="header_logo"><span class="udon_t">UDON</span>
+   or 
+   <span class="soba_t">SOBA</span></a>
+</header>
+<div class="main">
+  <h2>うどんとそばを見分けてみましょ</h2>
+  <p>AIが
+    <span class="udon">うどん</span>
+    と
+    <span class="soba">そば</span>
+    を見分けます</p>
+  <p>画像を送信してください</p>
+  <form method="POST" enctype="multipart/form-data">
+    <input type="file" class="file_choose" name="file">
+    <input type="submit" class="btn" value="submit!">
+  </form>
+  <div class="answer">{{answer}}</div>
+</div>
+
+<footer>
+  <a href="u-s" class="footer_logo">U-S</a>
+  <small>&copy; 2019 Aidemy, inc.</small>
+</footer>
+
+</body>
+</html>
